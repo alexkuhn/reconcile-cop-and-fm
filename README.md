@@ -15,4 +15,4 @@ $ ruby application/main.rb
 
 # Short documentation
 
-[Link to the short doc](short_doc.md)
+[Link to the short doc](framework/README.md)

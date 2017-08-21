@@ -101,7 +101,7 @@ It ensures that alterations from feature *ShowBelgianMap* are applied **_before_
 
 # Footnote
 
-Please look into the folder ‘application’ to see exactly how to use the framework for your applications:
+Please look into the folder ```application``` to see exactly how to use the framework for your applications:
 * ```application/contexts/InitContexts.rb``` to define contexts;
 * ```application/features/InitFeatures.rb``` to define features (and alterations);
 * ```application/mapping/InitMapping.rb``` to define mapping between contexts and features;

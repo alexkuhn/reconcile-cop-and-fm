@@ -12,6 +12,8 @@
 
 By default, the application set the location to *USA*. It displays some general informations, such as providing the emergency call. There’s also a map that is centered on USA, which shows the position of the user on it.
 
+**Note:** the application is **_only available textually_**: images below are simply representative of the textual version of the application. A graphical ERS application is still work in progress!
+
 ## Step 1
 
 The device detect that we are in *Belgium*, so it activates the corresponding context. It updates the map and the emergency call (from USA’s 911 to Europe’s 112).

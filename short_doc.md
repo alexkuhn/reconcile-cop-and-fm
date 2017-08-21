@@ -1,11 +1,11 @@
 
 # Create and Get Contexts and Features
 
-	```ruby
-	emergency = Context.new(:emergency)
-	show_map  = Feature.new(:show_map)
-	location  = Context.get(:location)
-	```
+```ruby
+emergency = Context.new(:emergency)
+show_map  = Feature.new(:show_map)
+location  = Context.get(:location)
+```
 
 Creates the context Emergency and the feature showMap.
 

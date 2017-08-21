@@ -5,14 +5,11 @@
 - folder ```application``` for the code of the ERS application.
 
 
-# How to run
-
-Use the following command at the current directory, to run the ERS application:
-
-```
-$ ruby application/main.rb
-```
-
-# Short documentation
+# Framework
 
 [Link to the README.md of the framework.](framework/README.md)
+
+# Application
+
+[Link to the README.md of the application.](application/README.md)
+

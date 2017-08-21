@@ -1,17 +1,17 @@
 
-# A.STRUCTURE
+# A. Structure
 
 - ’framework’: code of the framework.
 - ‘application’: code of the ERS application.
 
 
-# B. HOW TO RUN
+# B. How to run
 
 Use the following command at the current directory, to run the ERS application:
 
 	$ ruby application/main.rb
 
-# C. KNOWN ISSUES
+# C. Known issues
 
 1. Unresolved bug at the 2nd step of the scenario.
 	=> Infinite loop in the Activatable Petri Net.

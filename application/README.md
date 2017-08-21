@@ -8,6 +8,35 @@
 * ```application/classes``` are empty classes that define the skeleton of the application;
 * ```main.rb``` gathers everything above, and can be executed directly;
 
+# Scenario
+
+By default, the application set the location to *USA*. It displays some general informations, such as providing the emergency call. There’s also a map that is centered on USA, which shows the position of the user on it.
+
+## Step 1
+
+The device detect that we are in *Belgium*, so it activates the corresponding context. It updates the map and the emergency call (from USA’s 911 to Europe’s 112).
+
+![Alt text](screenshots/step1.png?raw=true “Step 1”)
+
+## Step 2
+
+An earthquake has been detected nearby, and the device detects that we are inside the dangerous zone of the earthquake. Therefore, it guides us out of the dangerous zone, which is displayed on the visually map and textually below the map.
+
+![Alt text](screenshots/step2.png?raw=true “Step 2”)
+
+## Step 3
+
+A wildfire has been detected nearby, and we have manually activated a feature to have information on nearby safe places. The safe places and the wildfire are shown on the map visually, and below the map textually. The guidance route has been changed due to the wildfire and the knowledge of safe places: we do not simply move away from the dangerous zone, but we also move to the nearest safe place (while avoiding any danger on our path, hence UZLeuven is shorted than UCL).
+
+![Alt text](screenshots/step3.png?raw=true “Step 3”)
+
+## Step 4
+
+The device detects that the battery power is low, so it activates the corresponding context. We manually deactivates the guidance feature, so that we reduce even more the battery consumption. The application does neither show the map, nor provide textual guidance.
+
+![Alt text](screenshots/step4.png?raw=true “Step 4”)
+
+
 # How to run
 
 Use the following command at the current directory, to run the ERS application:

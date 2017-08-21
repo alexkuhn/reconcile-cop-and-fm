@@ -107,7 +107,7 @@ Alteration.set_custom_order(
 
 It ensures that alterations from feature *ShowBelgianMap* are applied **_before_** alterations from feature *ShowEuropeanMap* (note: we order alterations by activation age of the features, in addition to refine this order with specified custom orders).
 
-# 3. Footnote
+# Footnote
 
 Please look into the folder ```application``` to see exactly how to use the framework for your applications:
 

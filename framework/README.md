@@ -5,7 +5,9 @@
 * ```manager/activatable``` contains every internal class related to activatable entities;
 * ```manager/alteration``` contains every internal class related to alterations.
 
-# Create and Get Contexts and Features
+# Code sample
+
+## Create and Get Contexts and Features
 
 ```ruby
 emergency = Context.new(:emergency)
@@ -15,7 +17,7 @@ location  = Context.get(:location)
 
 Creates the context *Emergency* and the feature *showMap*.
 
-# Define Relations Between Entities
+## Define Relations Between Entities
 
 ```ruby
 Context.add_configuration_relation(
@@ -45,7 +47,7 @@ Context.add_dependency_relation(
 * Adds the following **_additional_** constraint: *Map* **implies** **(** *Location* **and** *Connectivity* **)**;
 * Adds a **_causality_** relation between the contexts *Default* and *USA*, from *Default* to *USA*.
 
-# Activate Entities
+## Activate Entities
 
 ```ruby
 wifi.activate
@@ -56,7 +58,7 @@ Context.activate({
 
 It activates the context *WiFi*, and simultaneously activates the context *Europe* and deactivates the context *USA* (note that in our application, it automatically deactivates *USA* when we activate *Europe*).
 
-# Define Context-Feature Mapping
+## Define Context-Feature Mapping
 
 ```ruby
 Activatable.add_mapping(
@@ -71,7 +73,7 @@ Activatable.add_mapping(
 
 The former adds the context *Map* as **_enabler_** for the feature *showMap*, while the latter adds the context *LowBattery* as **_disable_**r for the feature *showMap*.
 
-# Define Alterations to Existing Features
+## Define Alterations to Existing Features
 
 ```ruby 
 inform_emergencies.add_alteration(
@@ -95,7 +97,7 @@ alert_emergencies.add_alteration(
 * The former adds an instance attribute *emergencies* to the class *ERS*, containing an array with just an instance of *Earthquake*.
 * The latter adds an instance method *alert* to the class *ERS*, which uses the newly added attribute *emergencies* to build a particular message.
 
-# Customize Alteration Composition
+## Customize Alteration Composition
 
 ```ruby
 Alteration.set_custom_order(

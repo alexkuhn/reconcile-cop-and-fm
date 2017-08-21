@@ -1,7 +1,7 @@
 # Structure
 
 * External classes at the root of this directory;
-   * __Activatable__, __Context__, __Feature__, and__Alteration__.
+   * __Activatable__, __Context__, __Feature__, and __Alteration__.
 * ```manager/activatable``` contains every internal class related to activatable entities;
 * ```manager/alteration``` contains every internal class related to alterations.
 

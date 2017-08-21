@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative 'Earthquake'
+require_relative 'ERSEarthquake'
 
 class ERS
 

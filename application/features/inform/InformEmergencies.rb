@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative '../../../framework/Feature'
-require_relative '../../classes/Earthquake'
+require_relative '../../classes/ERSEarthquake'
 
 class InformEmergencies
 
@@ -20,14 +20,13 @@ class InformEmergencies
         :ERS,
         :inform_emergencies,
         lambda do
-            s = "information on emergencies:"
+            s = "information on emergencies:\n"
             i = 1
             @emergencies.each do |e|
-                s += "#{i}. \t{e.type}\n"
-                e.properties.each do |p|
-                    s += "\t#{p.name}: #{p.value}\n"
+                s += "\t#{i}. \t#{e.type}\n"
+                e.properties.each do |name, value|
+                    s += "\t\t#{name}: #{value}\n"
                 end
-                s += "\n"
                 i += 1
             end
             s
@@ -36,7 +35,7 @@ class InformEmergencies
         :instance_attribute,
         :ERS,
         :emergencies,
-        [ Earthquake.new ])
+        [ ERSEarthquake.new ])
 
     def self.get
         @@feature

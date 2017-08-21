@@ -1,8 +1,8 @@
 
 # Structure
 
-- folder ```framework``` for the code of the framework.
-- folder ```application``` for the code of the ERS application.
+- ```framework``` for the code of the framework.
+- ```application``` for the code of the ERS application.
 
 
 # Framework

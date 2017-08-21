@@ -1,3 +1,9 @@
+# Structure
+
+* External classes at the root of this directory;
+   * __Activatable__, __Context__, __Feature__, and__Alteration__.
+* ```manager/activatable``` contains every internal class related to activatable entities;
+* ```manager/alteration``` contains every internal class related to alterations.
 
 # Create and Get Contexts and Features
 
@@ -102,11 +108,8 @@ It ensures that alterations from feature *ShowBelgianMap* are applied **_before_
 # Footnote
 
 Please look into the folder ```application``` to see exactly how to use the framework for your applications:
-* ```application/contexts/InitContexts.rb``` to define contexts;
-* ```application/features/InitFeatures.rb``` to define features (and alterations);
-* ```application/mapping/InitMapping.rb``` to define mapping between contexts and features;
-* ```application/custom_composition/InitCustomComposition.rb``` to set custom orders between features, when composing alterations (it refines sorting by feature’s activation age);
-* ```application/classes``` are empty classes that define the skeleton of the application;
-* ```main.rb``` gather everything above, and can be executed directly;
+
+[Link to the README.md of the application.](../application/README.md)
+
 
 

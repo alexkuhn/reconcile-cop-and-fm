@@ -12,7 +12,7 @@ class ShowEuropeanMap
         :ERS,
         :center_map_on_location,
         lambda do
-            "#{proceed} on Europe"
+            "#{proceed}\n\t\t\tOn Europe"
         end)
 
     def self.get

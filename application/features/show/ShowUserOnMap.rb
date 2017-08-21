@@ -12,7 +12,7 @@ class ShowUserOnMap
         :ERS,
         :show_on_map,
         lambda do
-            "#{proceed}\n\tposition of user"
+            "#{proceed}\n\t\t\tUser"
         end)
 
     def self.get

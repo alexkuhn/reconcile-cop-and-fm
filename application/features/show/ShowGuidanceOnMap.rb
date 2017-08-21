@@ -12,7 +12,7 @@ class ShowGuidanceOnMap
         :ERS,
         :show_on_map,
         lambda do
-            "#{proceed}\n\tguidance route"
+            "#{proceed},\n\t\t\tGuidance Route"
         end)
 
     def self.get

@@ -24,6 +24,9 @@ class InitCustomComposition
         Alteration.set_custom_order(
             :show_belgian_map,
             :show_european_map)
+        Alteration.set_custom_order(
+            :alert_in_danger,
+            :alert_emergencies)
     end
 
 end

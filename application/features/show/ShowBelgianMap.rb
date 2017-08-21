@@ -12,7 +12,7 @@ class ShowBelgianMap
         :ERS,
         :center_map_on_location,
         lambda do
-            "#{proceed}, more precisely on Belgium"
+            "#{proceed}, more precisely on Belgium."
         end)
 
     def self.get

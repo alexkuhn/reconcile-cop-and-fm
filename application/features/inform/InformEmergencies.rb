@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 
+require_relative '../../../framework/Context'
 require_relative '../../../framework/Feature'
 require_relative '../../classes/ERSEarthquake'
+require_relative '../../classes/ERSWildfire'
 
 class InformEmergencies
 
@@ -20,14 +22,17 @@ class InformEmergencies
         :ERS,
         :inform_emergencies,
         lambda do
-            s = "information on emergencies:\n"
+            s = "\t Emergencies:\n"
             i = 1
             @emergencies.each do |e|
-                s += "\t#{i}. \t#{e.type}\n"
-                e.properties.each do |name, value|
-                    s += "\t\t#{name}: #{value}\n"
+                if (Context.get(:earthquake).active? and e.type == :Earthquake) or
+                    (Context.get(:wildfire).active? and e.type == :Wildfire)
+                    s += "\t    #{i}. \t#{e.type}\n"
+                    e.properties.each do |name, value|
+                        s += "\t\t#{name}: #{value}\n"
+                    end
+                    i += 1
                 end
-                i += 1
             end
             s
         end)
@@ -35,7 +40,7 @@ class InformEmergencies
         :instance_attribute,
         :ERS,
         :emergencies,
-        [ ERSEarthquake.new ])
+        [ ERSEarthquake.new, ERSWildfire.new ])
 
     def self.get
         @@feature

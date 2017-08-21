@@ -12,14 +12,14 @@ class ShowOnMap
         :ERS,
         :show,
         lambda do
-            "#{proceed}\n#{show_on_map}"
+            "#{proceed}#{show_on_map}.\n\t\t"
         end)
     @@feature.add_alteration(
         :instance_method,
         :ERS,
         :show_on_map,
         lambda do
-            "visual info: "
+            "Visual info:"
         end)
 
     def self.get

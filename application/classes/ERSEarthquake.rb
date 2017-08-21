@@ -6,7 +6,7 @@ class ERSEarthquake < ERSEmergency
 
     def initialize(epicenter=nil, magnitude=nil, radius=nil)
         super()
-        @type = :earthquake
+        @type = :Earthquake
 
         if epicenter.nil?
             epicenter = "Place de la Bourse, 1000 Bruxelles"
@@ -17,9 +17,9 @@ class ERSEarthquake < ERSEmergency
         if radius.nil?
             radius = "25km"
         end
-        @properties[:epicenter] = epicenter
-        @properties[:magnitude] = magnitude
-        @properties[:radius] = radius
+        @properties[:Epicenter] = epicenter
+        @properties[:Magnitude] = magnitude
+        @properties[:Radius] = radius
     end
 
 end

@@ -12,7 +12,7 @@ class ShowEmergenciesOnMap
         :ERS,
         :show_on_map,
         lambda do
-            "#{proceed}\n\tposition and radius of emergencies"
+            "#{proceed},\n\t\t\tEmergencies"
         end)
 
     def self.get

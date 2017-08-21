@@ -12,14 +12,14 @@ class ShowCenteredLocation
         :ERS,
         :show,
         lambda do
-            "#{proceed}\n#{center_map_on_location}"
+            "#{proceed}\t#{center_map_on_location}\n\t\t"
         end)
     @@feature.add_alteration(
         :instance_method,
         :ERS,
         :center_map_on_location,
         lambda do
-            "centered"
+            "Centered:"
         end)
 
     def self.get

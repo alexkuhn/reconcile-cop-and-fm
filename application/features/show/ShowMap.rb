@@ -12,7 +12,7 @@ class ShowMap
         :ERS,
         :show,
         lambda do
-            "showing a map"
+            "Showing a map\n\t "
         end)
 
     def self.get

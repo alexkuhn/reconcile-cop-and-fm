@@ -12,7 +12,7 @@ class ShowSafePlacesOnMap
         :ERS,
         :show_on_map,
         lambda do
-            "#{proceed}\n\tpositions of safe places"
+            "#{proceed},\n\t\t\tSafe Places"
         end)
 
     def self.get

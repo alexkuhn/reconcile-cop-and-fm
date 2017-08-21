@@ -5,7 +5,7 @@
 * ```manager/activatable``` contains every internal class related to activatable entities;
 * ```manager/alteration``` contains every internal class related to alterations.
 
-# Code sample
+# Code samples
 
 ## Create and Get Contexts and Features
 

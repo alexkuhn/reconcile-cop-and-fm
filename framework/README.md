@@ -71,7 +71,7 @@ Activatable.add_mapping(
 	show_map )
 ```
 
-The former adds the context *Map* as **_enabler_** for the feature *showMap*, while the latter adds the context *LowBattery* as **_disable_**r for the feature *showMap*.
+The former adds the context *Map* as **_enabler_** for the feature *showMap*, while the latter adds the context *LowBattery* as **_disable_r** for the feature *showMap*.
 
 ## 5. Define Alterations to Existing Features
 
